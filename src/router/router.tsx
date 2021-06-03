@@ -2,12 +2,13 @@ import * as React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import HomePage from "../pages/home";
 import UserDetailPage from "../pages/user-detail";
+import UserEditPage from "../pages/user-edit";
 
 const AppRouter: React.FC = () => {
   return (
     <Switch>
       <Route path="/edit/:id">
-        <UserDetailPage />
+        <UserEditPage />
       </Route>
       <Route path="/view/:id">
         <UserDetailPage />
